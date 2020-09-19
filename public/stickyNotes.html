@@ -3,42 +3,14 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
-    <script src="p5.experience.js"></script> -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Raleway', sans-serif;
-        }
-
-        .stickyNote {
-            height: 150px;
-            width: 150px;
-            background-color: #eff2bb;
-            -moz-box-shadow: 2px 2px 4px rgba(33, 33, 33, 1);
-            -webkit-box-shadow: 2px 2px 4px rgba(33, 33, 33, 1);
-            box-shadow: 2px 2px 4px rgba(33, 33, 33, 1);
-            padding: 20px;
-        }
-
-        .stickyNote:hover {
-            background-color: #edf29b;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/stickyNotes.css">
 </head>
 
 <body>
-    <main>
-    </main>
-    <table class="ebb">
-        <div class="stickyNote">
-            <h3>Hello World!</h3>
-            <br>
-            <p>This is a new event!</p>
-        </div>
-    </table>
+    <table id="sports" class="ebb"></table>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="scripts/stickyNotes.js"></script>
 
 </html>

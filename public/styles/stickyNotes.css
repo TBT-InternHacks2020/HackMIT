@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.stickyNote {
+    height: 150px;
+    width: 150px;
+    background-color: #eff2bb;
+    -moz-box-shadow: 2px 2px 4px rgba(33, 33, 33, 1);
+    -webkit-box-shadow: 2px 2px 4px rgba(33, 33, 33, 1);
+    box-shadow: 2px 2px 4px rgba(33, 33, 33, 1);
+    padding: 20px;
+}
+
+.stickyNote:hover {
+    background-color: #edf29b;
+    cursor: pointer;
+}
