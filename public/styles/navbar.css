@@ -60,6 +60,16 @@ span {
     background-size: contain;
 }
 
+#header {
+    position: relative;
+    top: 15px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
