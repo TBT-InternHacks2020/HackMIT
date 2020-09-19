@@ -18,3 +18,19 @@
     background-color: #edf29b;
     cursor: pointer;
 }
+
+.ebb {
+    background-image: url("../images/cork.jpg");
+    border: 10px solid black;
+    width: 75%;
+    min-height: 90vh;
+    margin: 0 auto;
+}
+
+.stickies {
+    margin: 20px;
+}
+
+.stickies>tr>td>div{
+    margin: 10px;
+}
