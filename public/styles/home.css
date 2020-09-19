@@ -1,5 +1,11 @@
+.container .row {
+    justify-content: center;
+}
+
 .bulletin {
-    width: 300px;
+    margin: 20px;
+    margin-top: 100px;
+    width: 220px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
     text-align: center;
 }
@@ -11,6 +17,7 @@
 .clubName {
   background-color: white;
   padding: 10px;
+  padding-top: 20px;
   color: black;
 }
 
