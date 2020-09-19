@@ -1,27 +1,24 @@
-.col-lg-6 a {
-    font-size: 32px;
-    color: white;
+.bulletin {
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+    text-align: center;
 }
 
-.col-lg-6 button {
-    width: 200px;
-    margin-left: 15px;
+.bulletin:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.images {
-    height: 300px;
-    width: 500px;
-}
-
-.col-lg-6 {
-    padding: 20px;
+.clubName {
+  background-color: white;
+  padding: 10px;
+  color: black;
 }
 
 .jumbotron {
     background: rgba(255, 255, 255, 0.5);
     text-align: center;
     padding: 10px;
-    width: 30%
+    width: 80%
 }
 
 .display-4 {

@@ -50,8 +50,8 @@ span {
 #logo {
     position: relative;
     margin: auto;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background-image: url(../images/logo.png);
     background-size: contain;
 }
