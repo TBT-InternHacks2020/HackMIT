@@ -5,8 +5,8 @@
 }
 
 .stickyNote {
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
     background-color: #eff2bb;
     -moz-box-shadow: 2px 2px 4px rgba(33, 33, 33, 1);
     -webkit-box-shadow: 2px 2px 4px rgba(33, 33, 33, 1);
@@ -31,6 +31,12 @@
     margin: 20px;
 }
 
-.stickies>tr>td>div{
+.stickies>tr>td>div {
     margin: 10px;
+}
+
+.stickies>tr>td {
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
 }
