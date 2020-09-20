@@ -67,23 +67,22 @@ header {
     background-size: contain;
 }
 
-.rim {
-    position: absolute;
+/* .rim {
     overflow-y: auto;
+    width: 90%;
     top: 170px;
     bottom: 20px;
     left: 20px;
     right: 20px;
     background: #e6c8a0;
-}
+} */
 
 .board {
-    position: absolute;
-    top: 20px;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background: #c38850;
+    width: 90%;
+    margin: 20px auto;
+    background-image: url("../images/cork.jpg");
+    border: 20px solid #c38850;
+    border-radius: 6px;
 }
 
 
