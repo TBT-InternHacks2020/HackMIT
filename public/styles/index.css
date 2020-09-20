@@ -4,8 +4,10 @@
 
 .bulletin {
     margin: 20px;
-    margin-top: 100px;
+    margin-top: 10%;
+    padding: 10px;
     width: 220px;
+    border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
     text-align: center;
 }
@@ -14,10 +16,11 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.clubName {
-  background-color: white;
-  padding: 10px;
-  padding-top: 20px;
+.bulletin a {
+    text-decoration: none;
+}
+
+.bulletin.clubName:hover {
   color: black;
 }
 

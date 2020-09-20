@@ -5,8 +5,8 @@
 }
 
 .stickyNote {
-    height: 150px;
-    width: 150px;
+    height: 238px;
+    width: 238px;
     background-color: #eff2bb;
     -moz-box-shadow: 2px 2px 4px rgba(33, 33, 33, 1);
     -webkit-box-shadow: 2px 2px 4px rgba(33, 33, 33, 1);
@@ -17,4 +17,24 @@
 .stickyNote:hover {
     background-color: #edf29b;
     cursor: pointer;
+}
+
+.ebb {
+    background-image: url("../images/cork.jpg");
+    border: 10px solid black;
+    width: 75%;
+    min-height: 90vh;
+    margin: 0 auto;
+}
+
+.stickies {
+    margin: 20px;
+}
+
+.stickies>tr>td>div {
+    margin: 10px;
+}
+
+h3 {
+    font-size: 20px !important;
 }

@@ -13,14 +13,20 @@ span {
     padding-left: 30px;
 }
 
+header {
+    background: #1072f2;
+    min-height: 80px;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
-    background-color: #111;
+    right: 0;
+    background-color: #1072f2;
+    opacity: 0.9;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -30,7 +36,8 @@ span {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: #818181;
+    color: #b8b8b8;
+    opacity: 0.9;
     display: block;
     transition: 0.3s;
 }
@@ -59,6 +66,25 @@ span {
     background-image: url(../images/logo.png);
     background-size: contain;
 }
+
+/* .rim {
+    overflow-y: auto;
+    width: 90%;
+    top: 170px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: #e6c8a0;
+} */
+
+.board {
+    width: 90%;
+    margin: 20px auto;
+    background-image: url("../images/cork.jpg");
+    border: 20px solid #c38850;
+    border-radius: 6px;
+}
+
 
 @media screen and (max-height: 450px) {
     .sidenav {
