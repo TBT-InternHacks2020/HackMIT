@@ -1,14 +1,18 @@
 .rim {
-    position: relative;
-    margin: 20px;
-    height: 100vh;
+    position: absolute;
+    overflow-y: auto;
+    top: 170px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
     background: #e6c8a0;
 }
 
 .board {
-    position: relative;
-    margin: 20px;
+    position: absolute;
     top: 20px;
-    height: 95vh;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
     background: #c38850;
 }
