@@ -13,6 +13,11 @@ span {
     padding-left: 30px;
 }
 
+header {
+    background: #1072f2;
+    min-height: 80px;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -20,7 +25,8 @@ span {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #1072f2;
+    opacity: 0.8;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -31,6 +37,7 @@ span {
     text-decoration: none;
     font-size: 20px;
     color: #818181;
+    opacity: 0.8;
     display: block;
     transition: 0.3s;
 }
@@ -54,16 +61,6 @@ span {
 #logo {
     position: relative;
     margin: auto;
-    width: 80px;
-    height: 80px;
-    background-image: url(../images/logo.png);
-    background-size: contain;
-}
-
-#header {
-    position: relative;
-    top: 15px;
-    left: 20px;
     width: 80px;
     height: 80px;
     background-image: url(../images/logo.png);

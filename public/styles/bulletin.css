@@ -1,0 +1,14 @@
+.rim {
+    position: relative;
+    margin: 20px;
+    height: 100vh;
+    background: #e6c8a0;
+}
+
+.board {
+    position: relative;
+    margin: 20px;
+    top: 20px;
+    height: 95vh;
+    background: #c38850;
+}
