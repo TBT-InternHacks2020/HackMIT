@@ -1,10 +1,17 @@
 class StickyNote {
-    constructor(eventName, eventDate, eventTimeZone, eventDescription, color) {
-        this.eventName = eventName;
-        this.eventDate = eventDate;
-        this.eventTimeZone = eventTimeZone;
-        this.eventDescription = eventDescription;
-        this.color = color;
+    constructor(clubEmail, clubName, description, eventTitle, hexColor, postDate, signUpLink, socialLink, tag1, tag2, tag3, timezone) {
+        this.clubEmail = clubEmail;
+        this.clubName = clubName;
+        this.description = description;
+        this.eventTitle = eventTitle;
+        this.hexColor = hexColor;
+        this.postDate = postDate;
+        this.signUpLink = signUpLink;
+        this.socialLink = socialLink;
+        this.tag1 = tag1;
+        this.tag2 = tag2;
+        this.tag3 = tag3;
+        this.timezone = timezone;
     }
 }
 
@@ -19,9 +26,9 @@ function addStickyNotesToRow() {
         for (let j = 0; j < stickiesPerRow; j++) {
             let index = (stickiesPerRow  * i) + j;
             stringToAdd1 += `<td>
-            <div class="stickyNote" style="background-color:${currentStickyNotes[index].color}">
-            <h3>${currentStickyNotes[index].eventName}</h3>
-            <p>${currentStickyNotes[index].eventTimeZone}</p>
+            <div class="stickyNote" style="background-color:${currentStickyNotes[index].hexColor}">
+            <h3>${currentStickyNotes[index].eventTitle}</h3>
+            <p>${currentStickyNotes[index].timezone}</p>
             </div>
             </td>`
         }
@@ -36,8 +43,8 @@ function addStickyNotesToRow() {
         stringToAdd2 += `
         <td>
         <div class="stickyNote" style="background-color:${currentStickyNotes[index].color}">
-        <h3>${currentStickyNotes[index].eventName}</h3>
-        <p>${currentStickyNotes[index].eventTimeZone}</p>
+        <h3>${currentStickyNotes[index].eventTitle}</h3>
+        <p>${currentStickyNotes[index].timezone}</p>
         </div>
         </td>
         `;
@@ -51,7 +58,7 @@ function readData() {
     database.ref().on("value", function (snapshot) {
         snapshot.forEach((childSnapshot) => {
             var snap = childSnapshot.val();
-            currentStickyNotes.push(new StickyNote(snap["Club_name"], snap["Post_Date"], snap["Time Zone"], snap["Description"], snap["Hex_Color"]));
+            currentStickyNotes.push(new StickyNote(snap["Club_email"], snap["Club_name"], snap["Description"], snap["Event_Title"], snap["Hex_Color"], snap["Post_Date"], snap["Sign_Up_Link"], snap["Social_Link"], snap["Tag1"], snap["Tag2"], snap["Tag3"], snap["Time Zone"]));
         });
         console.log(currentStickyNotes);
         addStickyNotesToRow();
