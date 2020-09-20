@@ -34,9 +34,3 @@
 .stickies>tr>td>div {
     margin: 10px;
 }
-
-.stickies>tr>td {
-    display: inline-flex;
-    align-items: center;
-    align-content: center;
-}
