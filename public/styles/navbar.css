@@ -67,6 +67,26 @@ header {
     background-size: contain;
 }
 
+.rim {
+    position: absolute;
+    overflow-y: auto;
+    top: 170px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: #e6c8a0;
+}
+
+.board {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: #c38850;
+}
+
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
