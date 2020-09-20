@@ -1,0 +1,283 @@
+<html lang="en">
+<style>
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=date], i {
+  width: 25%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus, input[type=date]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+/* Set a style for all buttons */
+button {
+  color: #dcff46;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 15%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #fffeaa;
+  padding-top: 50px;
+  
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#centralModalInfo"> Add A Post
+    </button>
+ 
+  <!-- Central Modal Medium Info -->
+  <div class="modal fade" id="centralModalInfo" tabindex="0" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content">
+        <!--Header-->
+        <div class="modal-header">
+          <p class="heading lead">Add A Stickie <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="white-text">&times;</span>
+          </button></p>
+ 
+          
+        </div>
+ 
+        <!--Body-->
+
+        <div class="modal-body">
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+        <h1>Add A Post</h1>
+        <br>
+        <label for="email"><b>Post Name</b></label><br>
+        <input type="text" placeholder="Enter Post Name" name="club_name" required>
+        <br>
+        <label for="email"><b>Contact Email</b></label><br>
+        <input type="text" placeholder="Enter Email" name="club_email" required>
+        <br>
+        <label for="email"><b>Website Link</b></label><br>
+        <input type="text" placeholder="Enter Link" name="social_link" required>
+        <br>
+        <label for="email"><b>Sign-up Link</b></label><br>
+        <input type="text" placeholder="Enter Link" name="sign_up_link" >
+        <br>
+        <label for="email"><b>Post Date</b></label><br>
+	    <input type="date" id="start" name="Post_Date" value="2020-09-20"min="2020-09-20" max="2024-01-01"> 
+        <br>
+        
+        <label for="email"><b>Provide a short description for your post...</b></label><br> 
+        <input type="text" placeholder="Enter Description" name="Description" required>
+        <br> 
+        <label for="psw-repeat"><b>Post Location</b></label><br> 
+        <input type="text" placeholder="Event Location" name="Tag1" required>
+        <br> 
+        <label for="tags">Choose a Category:</label>
+        <br>  	
+        <select name="Category" id="Category" form="select">
+        <option value="Club">Club</option>
+        <option value="Social">Social</option>
+        <option value="University">University</option>
+        <option value="Sports">Sports</option>
+        </select>  
+        <br>
+        <label for="tags">Choose a Tag:</label>
+            <br>    
+        <select name="TagDescriptor" id="TagDescriptor" form="select">
+            <option value="Sports">Sports</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Arts">Arts</option>
+            <option value="Music">Music</option>
+            <option value="Science">Science</option>
+            <option value="Research">Research</option>
+            <option value="Music">Music</option>
+            <option value="Cultural">Cultural</option>
+            <option value="Theater">Theater</option>
+            <option value="Community Service">Community Service</option>
+            <option value="Tutoring">Tutoring</option>
+            <option value="Religious">Religious</option>
+            <option value="Politics">Politics</option>
+            <option value="N/A">N/A</option>
+        </select>
+        <br>
+        <label for="tags">Choose a Timezone:</label>
+        <br>
+        <select name="Time_Zone" id="Time_Zone" form="select">
+            <option value="GMT -12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+            <option value="GMT -11:00">(GMT -11:00) Midway Island, Samoa</option>
+            <option value="GMT -10:00">(GMT -10:00) Hawaii</option>
+            <option value="GMT -09:50">(GMT -9:30) Taiohae</option>
+            <option value="GMT -09:00">(GMT -9:00) Alaska</option>
+            <option value="GMT -08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+            <option value="GMT -07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+            <option value="GMT -06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+            <option value="GMT -05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+            <option value="GMT -04:50">(GMT -4:30) Caracas</option>
+            <option value="GMT -04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+            <option value="GMT -03:50">(GMT -3:30) Newfoundland</option>
+            <option value="GMT -03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+            <option value="GMT -02:00">(GMT -2:00) Mid-Atlantic</option>
+            <option value="GMT -01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+            <option value="GMT +00:00" selected="selected">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+            <option value="GMT +01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+            <option value="GMT +02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+            <option value="GMT +03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+            <option value="GMT +03:50">(GMT +3:30) Tehran</option>
+            <option value="GMT +04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+            <option value="GMT +04:50">(GMT +4:30) Kabul</option>
+            <option value="GMT +05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+            <option value="GMT +05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+            <option value="GMT +05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+            <option value="GMT +06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+            <option value="GMT +06:50">(GMT +6:30) Yangon, Mandalay</option>
+            <option value="GMT +07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+            <option value="GMT +08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+            <option value="GMT +08:75">(GMT +8:45) Eucla</option>
+            <option value="GMT +09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+            <option value="GMT +09:50">(GMT +9:30) Adelaide, Darwin</option>
+            <option value="GMT +10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+            <option value="GMT +10:50">(GMT +10:30) Lord Howe Island</option>
+            <option value="GMT +11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+            <option value="GMT +11:50">(GMT +11:30) Norfolk Island</option>
+            <option value="GMT +12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+            <option value="GMT +12:75">(GMT +12:45) Chatham Islands</option>
+            <option value="GMT +13:00">(GMT +13:00) Apia, Nukualofa</option>
+            <option value="GMT +14:00">(GMT +14:00) Line Islands, Tokelau</option>
+        </select>
+        <br>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn" onclick="newPost(this.Category, this.club_email,this.club_name, this.Description,null,this.Post_Date,this.sign_up_link, this.social_link, this.Tag1,this.TagDescriptor, null, '#fffeaa', this.Time_Zone)">Post It!</button>
+      </div>
+    </div>
+  </form>
+        </div>
+ 
+     
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!-- Central Modal Medium Info-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../database.js"></script>
+  <script src="scripts/write.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    let userRef = this.database.ref('hackmit-d84b7/' + userId);
+ userRef.child(
+'mike').set({'firstName': value.firstName, 'lastName': value.lastName, 'gender': value.gender.toLowerCase(),
+       'dateOfBirth': moment(value.dateOfBirth).toDate().getTime()})
+
+    
+    </script>
+  </body>
+  </html>
